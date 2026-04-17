@@ -70,7 +70,7 @@ export default function Navbar() {
           
           {/* Logo */}
           <h1 className="text-xl md:text-2xl font-bold text-white tracking-wide">
-            DigitakMark
+            StratvizSolution
           </h1>
 
           {/* Desktop Menu */}

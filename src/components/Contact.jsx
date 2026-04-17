@@ -36,13 +36,13 @@ export default function Contact() {
           {/* 🔥 Contact Info */}
           <div className="space-y-4 text-gray-300">
             <div className="flex items-center gap-3">
-              <Mail size={18} /> info@digitakmark.com
+              <Mail size={18} /> stratvizsolution@gmail.com
             </div>
             <div className="flex items-center gap-3">
-              <Phone size={18} /> +91 98765 43210
+              <Phone size={18} /> +91 70158 01724
             </div>
             <div className="flex items-center gap-3">
-              <MapPin size={18} /> India
+              <MapPin size={18} /> Noida Sector 62, Block - C, Rajiv Vihar, UP
             </div>
           </div>
         </motion.div>
