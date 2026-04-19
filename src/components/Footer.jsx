@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import logo from "../assets/portlogo.png";
 import {
     FaInstagram,
     FaLinkedin,
@@ -54,9 +55,21 @@ export default function Footer() {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
                 >
-                    <h2 className="text-white text-2xl font-bold mb-4">
-                        StratvizSolution
-                    </h2>
+                    <div className="relative inline-flex items-center">
+
+                        {/* Background Logo */}
+                        <img
+                            src={logo}
+                            alt="logo"
+                            className="absolute left-0 top-1/2 -translate-y-1/2 w-14 md:w-16 opacity-30"
+                        />
+
+                        {/* Gradient Text */}
+                        <h2 className="text-2xl font-bold mb-4 bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent pl-16 md:pl-20">
+                            StratvizSolutions
+                        </h2>
+
+                    </div>
 
                     <p className="text-sm leading-relaxed">
                         We craft high-converting websites & digital experiences that drive

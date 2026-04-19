@@ -9,6 +9,10 @@ import crateImg from "../assets/P10.webp";
 import mannImg from "../assets/P11.jpg";
 import chetanImg from "../assets/P12.png";
 
+/* ✅ NEW IMAGES ADD KARO (apne assets me daal dena) */
+import brunelloImg from "../assets/brunelloImg.webp";
+import grownestImg from "../assets/grownestImg.png";
+
 const projects = [
   {
     title: "PharmEasy",
@@ -64,7 +68,24 @@ const projects = [
     img: chetanImg,
     live: "https://www.chetantravels.com/",
   },
+
+  /* ✅ NEW CARD 1 */
+  {
+    title: "Brunello Cucinelli",
+    tech: "Luxury Fashion",
+    img: brunelloImg,
+    live: "https://shop.brunellocucinelli.com/en-gb/ai",
+  },
+
+  /* ✅ NEW CARD 2 */
+  {
+    title: "Grownest Realty",
+    tech: "Real Estate",
+    img: grownestImg,
+    live: "https://grownestrealty.com/",
+  },
 ];
+
 export default function Portfolio() {
   return (
     <section
@@ -93,8 +114,6 @@ export default function Portfolio() {
       {/* Grid */}
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
         {projects.map((p, i) => (
-          
-          /* 🔥 FULL CARD LINK FIX */
           <a
             key={i}
             href={p.live}
@@ -121,11 +140,8 @@ export default function Portfolio() {
                   {p.title}
                 </h3>
 
-                <p className="text-gray-400 text-sm mb-4">
-                  {p.tech}
-                </p>
+                <p className="text-gray-400 text-sm mb-4">{p.tech}</p>
 
-                {/* Button (visual only now) */}
                 <span className="px-5 py-2 text-sm bg-white text-black rounded-full">
                   Visit Website
                 </span>

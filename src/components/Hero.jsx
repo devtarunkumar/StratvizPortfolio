@@ -105,6 +105,18 @@ export default function Hero() {
           >
             View Projects
           </motion.a>
+
+          {/* ✅ NEW WEBSITE BUTTON */}
+          <motion.a
+            href="https://www.stratvizsolution.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.05 }}
+            className="px-8 py-3 rounded-full bg-white text-black font-medium hover:bg-gray-200 transition"
+          >
+            Visit Our Website
+          </motion.a>
+
         </motion.div>
 
         {/* 🔥 Stats */}
