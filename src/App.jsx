@@ -5,6 +5,7 @@ import Portfolio from "./components/Portfolio";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import OfferSection from "./components/OfferSection";
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
       <Navbar />
       <Hero />
       <Services />
+      <OfferSection />
       <Portfolio />
       <About />
       <Contact />
